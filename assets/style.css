@@ -152,7 +152,7 @@ section.problem {
 /* Priorities  */
 
 section.priorities {
-    background: url('penrose.webp') no-repeat center top;
+    background: url('penrose.webp') center top;
     background-size: cover;
     padding: 200px 0 0;
 }
