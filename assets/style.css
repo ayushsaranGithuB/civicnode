@@ -248,6 +248,7 @@ footer p {
 
     header h1.logo {
         font-size: 3.5em;
+        padding-bottom: 8px;
     }
 
     header p {
@@ -286,15 +287,17 @@ footer p {
 
     section.solution {
         background: url('downtown.jpg') var(--background-color) no-repeat center right;
-        background-size: 80%;
+        background-size: min(1180px, 80%);
     }
 
     .proposition {
         background: linear-gradient(90deg, #222222 0%, #222222 60%, #22222200 100%);
         color: var(--text-color);
         padding-top: 50px;
-        width: 600px;
-        margin: 0 0 0 calc(60vh - 300px);
+        min-width: 600px;
+        max-width: calc(50% - 200px);
+        --left-margin: max(30px, calc(50vw - 600px));
+        margin: 0 0 0 var(--left-margin);
         padding-right: 200px;
     }
 
@@ -309,18 +312,23 @@ footer p {
 
     .team {
         background: linear-gradient(90deg, #222222 0%, #222222 60%, #22222200 100%);
-        width: 600px;
-        margin: 0 0 0 calc(60vh - 300px);
         padding-left: 0;
-        padding-right: 200px;
         padding-bottom: 150px;
         font-size: 1.2em;
         line-height: 140%;
+        min-width: 600px;
+        max-width: calc(50% - 200px);
+        --left-margin: max(30px, calc(50vw - 600px));
+        margin: 0 0 0 var(--left-margin);
+        padding-right: 200px;
+
+
     }
 
     section.priorities {
         padding: 0;
-        background-size: 100%;
+        background-size: 1080px;
+        background-position: top left;
     }
 
     .priorities .content {
