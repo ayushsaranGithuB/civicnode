@@ -235,7 +235,7 @@ footer p {
 
 /* Desktop Styles */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
     .content {
         max-width: 1000px;
@@ -327,21 +327,28 @@ footer p {
 
     section.priorities {
         padding: 0;
-        background-size: 1080px;
+        background-size: cover 100%;
         background-position: top left;
+        position: relative;
+        height: 60vh;
     }
 
     .priorities .content {
-        padding: 200px 0 200px 240px;
-        width: 50%;
-        height: 100%;
-        margin: 0 0 0 calc(50% - 240px);
+        --hor-padding: clamp(150px, 5vw, 200px);
+        padding: var(--hor-padding);
+        padding-left: 240px;
+        --width: calc(50% - var(--hor-padding));
+        width: var(--width);
+        height: calc(60vh - 2*var(--hor-padding));
         background: linear-gradient(90deg, #81C9C100 0%, #81C9C1 15%, #81C9C1 100%);
         color: var(--background-color);
         font-size: 1.2em;
         line-height: 140%;
         font-weight: 400;
         border-radius: 8px;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     .priorities h2 {
