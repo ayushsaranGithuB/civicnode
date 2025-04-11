@@ -344,6 +344,13 @@ footer p {
         border-radius: 8px;
     }
 
+    .priorities h2 {
+        border-bottom: 1.5px solid var(--background-color);
+        width: fit-content;
+        padding-bottom: 6px;
+        padding-right: 16px;
+    }
+
     .priorities .content li {
         max-width: 600px;
     }
