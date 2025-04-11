@@ -120,7 +120,7 @@ section.problem {
 /*  Solution */
 
 .proposition {
-    background: url('downtown.jpg') no-repeat center center;
+    background: url('outlook-tall.webp') no-repeat center center;
     background-size: cover;
     color: var(--text-color);
     padding: 400px 0 0;
@@ -152,14 +152,16 @@ section.problem {
 /* Priorities  */
 
 section.priorities {
-    background: url('outlook.webp') no-repeat center top;
+    background: url('penrose.webp') no-repeat center top;
     background-size: cover;
-    padding: 240px 0 0;
+    padding: 200px 0 0;
 }
 
 .priorities .content {
-    padding: 80px 24px 60px;
-    background: linear-gradient(#22222200 0%, #222222 40%, #222222 100%);
+    padding: 120px 24px 80px;
+    background: linear-gradient(#81C9C100 0%, #81C9C1 30%, #81C9C1 100%);
+    color: var(--background-color);
+    font-weight: 400;
 }
 
 .priorities ol {
@@ -286,12 +288,12 @@ footer p {
     }
 
     section.solution {
-        background: url('downtown.jpg') var(--background-color) no-repeat center right;
+        background: url('outlook-tall.webp') var(--background-color) no-repeat center right;
         background-size: min(1180px, 80%);
     }
 
     .proposition {
-        background: linear-gradient(90deg, #222222 0%, #222222 60%, #22222200 100%);
+        background: linear-gradient(90deg, #222222 0%, #222222 70%, #22222200 100%);
         color: var(--text-color);
         padding-top: 50px;
         min-width: 600px;
@@ -311,7 +313,7 @@ footer p {
 
 
     .team {
-        background: linear-gradient(90deg, #222222 0%, #222222 60%, #22222200 100%);
+        background: linear-gradient(90deg, #222222 0%, #222222 70%, #22222200 100%);
         padding-left: 0;
         padding-bottom: 150px;
         font-size: 1.2em;
@@ -327,10 +329,10 @@ footer p {
 
     section.priorities {
         padding: 0;
-        background-size: cover 100%;
+        background-size: auto 100%;
         background-position: top left;
         position: relative;
-        height: 60vh;
+        height: 80vh;
     }
 
     .priorities .content {
@@ -339,8 +341,8 @@ footer p {
         padding-left: 240px;
         --width: calc(50% - var(--hor-padding));
         width: var(--width);
-        height: calc(60vh - 2*var(--hor-padding));
-        background: linear-gradient(90deg, #81C9C100 0%, #81C9C1 15%, #81C9C1 100%);
+        height: calc(80vh - 2*var(--hor-padding));
+        background: linear-gradient(90deg, #81C9C100 0%, #81C9C1 25%, #81C9C1 100%);
         color: var(--background-color);
         font-size: 1.2em;
         line-height: 140%;
