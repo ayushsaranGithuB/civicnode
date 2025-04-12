@@ -103,18 +103,34 @@ section.problem {
     background: url('map.webp') no-repeat center center;
     background-size: 1200px;
     color: var(--text-color);
+
+}
+
+.problem .content {
     padding: 160px 44px;
     display: flex;
     flex-direction: column;
     row-gap: 90px;
+    background-image: linear-gradient(#ffffffd0 0%, #ffffff75 50%, #ffffffd8 100%);
 }
 
 .problem p {
-    background-color: var(--background-color);
     color: var(--text-color);
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    align-items: center;
+}
+
+.problem p span {
+    display: block;
+    background-color: var(--background-color);
+    padding: 4px 8px;
+    width: fit-content;
     text-align: center;
-    padding: 12px 16px;
+    font-weight: 400;
+    font-size: clamp(15px, 4vw, 1.3em);
 }
 
 /*  Solution */
@@ -152,17 +168,26 @@ section.problem {
 /* Priorities  */
 
 section.priorities {
-    background: url('penrose.webp') center top;
+    background: url('penrose3.webp') center top;
     background-size: cover;
     padding: 200px 0 0;
 }
 
 .priorities .content {
     padding: 120px 24px 80px;
-    background: linear-gradient(#81C9C100 0%, #81C9C1 30%, #81C9C1 100%);
-    color: var(--background-color);
+    background: linear-gradient(#12374800 0%, #123748 30%, #112434 100%);
+    color: white;
     font-weight: 400;
 }
+
+
+.priorities h2 {
+    border-bottom: 1.5px solid white;
+    width: fit-content;
+    padding-bottom: 6px;
+    padding-right: 16px;
+}
+
 
 .priorities ol {
     padding: 0;
@@ -178,7 +203,7 @@ section.priorities {
 section.updates {
     background: url('leaves.webp') no-repeat center top;
     background-size: cover;
-    padding: 64px 16px;
+    padding: 20vh 16px;
 }
 
 .updates .content {
@@ -273,15 +298,17 @@ footer p {
 
     section.problem {
         min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         background-size: cover;
         padding: 0;
     }
 
+    .problem .content {
+        width: 100%;
+        margin: 0;
+        max-width: none;
+    }
+
     section.problem p {
-        width: 30ch;
         margin-bottom: 0;
         font-size: 1.4em;
         line-height: 140%;
@@ -332,36 +359,35 @@ footer p {
         background-size: auto 100%;
         background-position: top left;
         position: relative;
-        height: 80vh;
+        height: 100vh;
     }
 
     .priorities .content {
-        --hor-padding: clamp(150px, 5vw, 200px);
-        padding: var(--hor-padding);
-        padding-left: 240px;
-        --width: calc(50% - var(--hor-padding));
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        padding: 0 100px 0 300px;
+        --width: 80%;
         width: var(--width);
-        height: calc(80vh - 2*var(--hor-padding));
-        background: linear-gradient(90deg, #81C9C100 0%, #81C9C1 25%, #81C9C1 100%);
-        color: var(--background-color);
+        height: 100%;
+        background: linear-gradient(90deg, #12374800 0%, #123748 25%, #112434 100%);
         font-size: 1.2em;
         line-height: 140%;
-        font-weight: 400;
+        font-weight: 300;
         border-radius: 8px;
         position: absolute;
         top: 0;
         right: 0;
     }
 
-    .priorities h2 {
-        border-bottom: 1.5px solid var(--background-color);
-        width: fit-content;
-        padding-bottom: 6px;
-        padding-right: 16px;
-    }
-
     .priorities .content li {
         max-width: 600px;
+    }
+
+    section.updates {
+        padding: 30vh 0;
     }
 
     section.updates .content {
