@@ -262,6 +262,11 @@ footer p {
     line-height: 1.6em;
 }
 
+footer p.credits {
+    font-size: 0.7em;
+    opacity: 0.2;
+}
+
 
 /* Desktop Styles */
 
