@@ -106,7 +106,7 @@ section.problem {
     background: url('map.webp') no-repeat center center;
     background-size: 1200px;
     color: var(--text-color);
-
+    background-attachment: fixed;
 }
 
 .problem .content {
