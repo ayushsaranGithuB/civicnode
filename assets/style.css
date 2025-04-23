@@ -315,6 +315,9 @@ footer p.credits {
         width: 100%;
         margin: 0;
         max-width: none;
+        min-height: 100vh;
+        box-sizing: content-box;
+        justify-content: center;
     }
 
     section.problem p {
